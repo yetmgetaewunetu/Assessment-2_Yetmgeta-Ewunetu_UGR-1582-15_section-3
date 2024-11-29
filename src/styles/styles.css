@@ -134,6 +134,7 @@ aside h2,
 }
 .main-articles img {
   height: 100px;
+  object-fit: cover;
 }
 .red-link {
   color: var(--linkVisited);
@@ -211,6 +212,7 @@ footer {
 }
 .images-container img {
   width: 100%;
+  object-fit: cover;
 }
 
 .about-image {
