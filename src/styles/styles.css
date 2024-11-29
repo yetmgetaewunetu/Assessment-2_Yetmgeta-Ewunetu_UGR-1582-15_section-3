@@ -237,6 +237,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 30px;
+  margin: 20px 0 0;
   background: black;
 }
 .footer-links-container {
