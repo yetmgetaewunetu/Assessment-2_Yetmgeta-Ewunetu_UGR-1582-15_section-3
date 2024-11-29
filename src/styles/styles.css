@@ -1,0 +1,251 @@
+:root {
+  --mainColor: rgb(7, 176, 7);
+  --mainHovered: rgb(5, 108, 5);
+  --colorSoft: rgb(139, 138, 138);
+  --linkVisited: rgb(248, 49, 49);
+
+  --logo: rgb(193, 126, 2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: "poppins";
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: rgb(20, 23, 20);
+}
+nav {
+  display: flex;
+  flex-direction: column;
+}
+.header-slogan {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+.logoh1 {
+  margin: 0 0 30px;
+}
+.logo {
+  font-size: 4rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.logo > span {
+  font-size: 4.5rem;
+  color: var(--logo);
+}
+.header-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.header-link {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  background: var(--mainColor);
+  border-radius: 7px;
+  transition: background 0.3s;
+}
+.header-link:hover {
+  background: var(--mainHovered);
+}
+.active {
+  background: var(--logo);
+}
+.active:hover {
+  background: rgb(106, 69, 1);
+}
+main {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 50px auto;
+}
+.main {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  font-size: 0.9rem;
+}
+aside {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.1rem;
+  float: right;
+}
+.about-main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.about-main p,
+span {
+  font-size: 0.9rem;
+}
+.about-main p {
+  color: var(--colorSoft);
+}
+.main-articles {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main-articles p {
+  font-size: 0.9rem;
+  color: var(--colorSoft);
+}
+.main-articles h2,
+.about-main-article h2,
+aside h2,
+.contact-main h2 {
+  color: var(--mainColor);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.main-articles > span,
+.about-main-article > span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.main-articles img {
+  height: 100px;
+}
+.red-link {
+  color: var(--linkVisited);
+}
+.green-link {
+  color: var(--mainColor);
+  text-decoration: underline;
+}
+.article-image {
+  width: 100%;
+}
+aside ul {
+  list-style: none;
+}
+aside ul li a {
+  text-decoration: none;
+  color: rgb(28, 27, 27);
+  font-size: 0.9rem;
+}
+aside span {
+  font-size: 0.9rem;
+}
+.bold {
+  font-weight: bold;
+}
+.contact-main {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-main p {
+  font-size: 0.9rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form label {
+  color: var(--colorSoft);
+}
+form input {
+  padding: 10px 10px;
+}
+form button {
+  width: max-content;
+  padding: 7px 10px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+footer {
+  padding: 20px 0 0;
+  color: white;
+  background: rgb(20, 23, 20);
+}
+.footer-articles-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  line-height: 1.3rem;
+}
+.footer-articles-container > article {
+  width: 25%;
+  overflow: hidden;
+  font-size: 0.7rem;
+}
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  gap: 15px;
+  align-items: stretch;
+}
+.images-container img {
+  width: 100%;
+}
+
+.about-image {
+  float: left;
+  margin-right: 10px;
+  width: 60px;
+  aspect-ratio: 1;
+}
+.addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 15px;
+}
+.footer-link {
+  color: var(--mainColor);
+}
+.footer-articles-container h2 {
+  margin: 0 0 20px;
+}
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background: black;
+}
+.footer-links-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-links-container > a {
+  color: white;
+  text-decoration: none;
+}
+#copyactive {
+  color: var(--mainColor);
+}
