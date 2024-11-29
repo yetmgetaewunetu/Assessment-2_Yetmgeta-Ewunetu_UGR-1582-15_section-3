@@ -232,6 +232,7 @@ footer {
   margin: 0 0 20px;
 }
 .copyright {
+  margin: 20px 0 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
